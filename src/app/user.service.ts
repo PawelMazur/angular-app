@@ -27,7 +27,6 @@ export class UserService {
   }
 
   getUser(id: number): Observable<User> {
-    console.log("!!!");
     const url = this.usersUrl + '/' + id;
     return this.http.get<User>(url).pipe(
      catchError(this.handleError<User>('getUser id='+id))
