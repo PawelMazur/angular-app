@@ -1,0 +1,14 @@
+<div class="card">
+  <div class="card-header">
+    Użytkownicy
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let user of users">
+      <a routerLink="/user/{{user.id}}">
+        <span>{{user.id}}</span>
+        <span> {{user.name}}</span>
+        <span> {{user.surname}}</span>
+      </a>  
+    </li>
+  </ul>
+</div>
